@@ -41,7 +41,7 @@ public class JLinLib {
         public static String sumUpTo(int Integer)
         {
 
-            for(int i = 0 )
+            for(int i = 0 );
         }
 
 }
