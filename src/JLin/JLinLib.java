@@ -13,9 +13,9 @@ public class JLinLib {
             String x = new String("");
             for(int i = str.length(); i > 0; i--)
                 {
-                    String y = str.substring(i,i-1);
-                    x = x + y;
-                    if(x.equals(y))
+                    String y = str.substring(i-1,i);
+                    x += y;
+                    if(x.equalsIgnoreCase(y))
                     {
                         return "true";
                     }
@@ -38,10 +38,6 @@ public class JLinLib {
             return y + mainStr ;
         }
 
-        public static String sumUpTo(int Integer)
-        {
 
-            for(int i = 0 );
-        }
 
 }
