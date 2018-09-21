@@ -7,22 +7,30 @@ public class JLinLib {
     {
         System.out.println(str);
     }
+    public static void println(int str)
+    {
+        System.out.println(str);
+    }
 
-    public static String isPalindrome(String str)
-        {
-            String x = new String("");
-            for(int i = str.length(); i > 0; i--)
-                {
-                    String y = str.substring(i-1,i);
-                    x += y;
-                    if(x.equalsIgnoreCase(y))
-                    {
-                        return "true";
-                    }
-                    return "false";
-                }
-                return "false";
-        }
+    //public static String isPalindrome(String str)
+      //  {
+        //    String x = "";
+          //  for(int i = str.length(); i >= 0; i--)
+              //  {
+            //        String y = str.substring(i-1,i);
+                //    x += y;
+                    //if(x.equals(y))
+                  //  {
+                      //  return "true";
+                    //}
+                 //   return "false";
+               // }
+              //  return "false";
+       // }
+    public static String datStr(String str)
+    {
+        
+    }
 
     /**
      *
@@ -36,6 +44,16 @@ public class JLinLib {
             y = mainStr.substring(0,mainStr.indexOf(subStr));
             mainStr = mainStr.substring(mainStr.indexOf(subStr)+subStr.length());
             return y + mainStr ;
+        }
+        public static int sumUpTo(int number)
+        {
+            int x = 0;
+            for(int i = 0; i <= number; i++)
+            {
+                x = x + i;
+
+            }
+            return x;
         }
 
 
