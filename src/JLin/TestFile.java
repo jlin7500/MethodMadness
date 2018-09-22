@@ -9,9 +9,11 @@ public class TestFile {
     {
         println("I love a cup of Java in the morning.");
       //  println(isPalindrome("lmao"));
+        //this function is cut out what it does
         println(cutOut("ratcatbat","cat"));
-        println(cutOut("1@","@"));
         println(sumUpTo(10));
+        println(dateStr("04/10/2001"));
+        println(multiplicationTable(5,10));
     }
 
 }

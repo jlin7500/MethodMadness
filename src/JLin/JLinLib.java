@@ -27,9 +27,12 @@ public class JLinLib {
                // }
               //  return "false";
        // }
-    public static String datStr(String str)
+    public static String dateStr(String str)
     {
-        
+        String x = str.substring(0,2);
+        String y = str.substring(3,5);
+        String z = str.substring(6,str.length());
+        return y + "-" + x + "-" + z;
     }
 
     /**
@@ -54,6 +57,17 @@ public class JLinLib {
 
             }
             return x;
+        }
+        public static int  multiplicationTable(int base, int range)
+        {
+            int x = 0;
+            for(int i = 0; i <= range; i++)
+            {
+                x = x + i;
+
+            }
+            return x;
+
         }
 
 
