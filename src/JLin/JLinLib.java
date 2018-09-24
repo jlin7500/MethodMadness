@@ -11,6 +11,10 @@ public class JLinLib {
     {
         System.out.println(str);
     }
+    public static void println(boolean str)
+    {
+        System.out.println(str);
+    }
 
     //public static String isPalindrome(String str)
       //  {
@@ -27,6 +31,24 @@ public class JLinLib {
                // }
               //  return "false";
        // }
+
+    public static boolean isPalindrome(String str) {
+        int length = str.length();
+        if (length < 2)
+        {
+            return true;
+        }
+        else {
+            if (str.charAt(0) != str.charAt(length - 1)) {
+                System.out.println(false);
+            }
+            if (str.charAt(0) == str.charAt(length - 1)) {
+                System.out.println(true);
+                return true;
+            }
+        }
+        return false;
+    }
     public static String dateStr(String str)
     {
         String x = str.substring(0,2);
@@ -34,7 +56,31 @@ public class JLinLib {
         String z = str.substring(6,str.length());
         return y + "-" + x + "-" + z;
     }
+    public static boolean isFibonnaci(int num)
+    {
+        int input = num;
+        int x = 0;
+        int y = 1;
+        int z = 0;
 
+        for(z = 0; z < input; z++)
+        {
+            z = x + y;//num +
+            x = y;
+            y = z;
+        }
+        if (z != input)
+        {
+            System.out.println(false);
+        }
+
+        else if(z == input)
+        {
+            System.out.println(true);
+            return true;
+        }
+        return false;
+    }
     /**
      *
      * @param mainStr
@@ -45,6 +91,7 @@ public class JLinLib {
         {
             String y = new String("");
             y = mainStr.substring(0,mainStr.indexOf(subStr));
+
             mainStr = mainStr.substring(mainStr.indexOf(subStr)+subStr.length());
             return y + mainStr ;
         }
@@ -58,7 +105,7 @@ public class JLinLib {
             }
             return x;
         }
-        public static int  multiplicationTable(int base, int range)
+        public static int multiplicationTable(int base, int range)
         {
             int x = 0;
             for(int i = 0; i <= range; i++)
@@ -67,7 +114,6 @@ public class JLinLib {
 
             }
             return x;
-
         }
 
 
