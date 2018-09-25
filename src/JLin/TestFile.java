@@ -17,7 +17,7 @@ public class TestFile {
         // this is the date formatting function. To be honest I kinda hard coded it because you gave us exact inputs so.just wrote different dates to see if it caused a problem, not like its suppose to.
         println(dateStr("04/10/2001"));
         // this is basically another version of sum up to just in a different form and also displayed differently.tested it with random bases and ranges.
-        multiplicationTable(5,10);
+        multiplicationTable(3,10);
     }
 
 }

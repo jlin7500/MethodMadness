@@ -25,11 +25,16 @@ public class JLinLib {
         {
             return true;
         }
-        else {
-            if (str.charAt(0) != str.charAt(x - 1)) {
-                System.out.println(false);
-            }
-            if (str.charAt(0) == str.charAt(x - 1)) {
+        else
+            {
+
+                if (str.charAt(0) != str.charAt(x - 1))
+                {
+                    System.out.println(false);
+                 }
+
+            if (str.charAt(0) == str.charAt(x - 1))
+            {
                 System.out.println(true);
                 return true;
             }
@@ -80,14 +85,13 @@ public class JLinLib {
      * @param base
      * @param range
      */
-        public static void multiplicationTable(int base, int range)//setting it to void because its a different type of output
-        {
-            int x = 0;
-            for(int i = 0; i <= range; i++)// basically same as sumupto
+        public static void multiplicationTable(int base, int range)
             {
-                x = x + i;
-                System.out.println(x);// this is what makes the outputs keep coming.
+
+            for(int i = 0; i <= range; i++)
+            {
+                int x = base * i;
+                System.out.println(x);
             }
-            return;// i cannot return anything other then nothing.
         }
 }
